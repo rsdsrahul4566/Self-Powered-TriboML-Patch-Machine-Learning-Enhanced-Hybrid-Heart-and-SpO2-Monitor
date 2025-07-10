@@ -169,6 +169,20 @@ ESP32 GND
     └── Buzzer Negative
 ```
 
+## Battery and Regulation
+```bash
+Li-Ion Battery (3.7V, 2000mAh)
+│
+├── Schottky Diode (BAT54C) ── Reverse Protection
+│
+├── LDO Regulator (AMS1117-3.3) ── 3.3V Output to ESP32 and Sensors
+│
+└── Voltage Divider ── Battery Level Monitor (GPIO39)
+    ├── R1: 100kΩ
+    └── R2: 47kΩ ── GND
+
+```
+
 ## I2C Bus Configuration
 ```bash
 GPIO 21 (SDA) ──┬── MAX30102 SDA
@@ -195,4 +209,17 @@ GPIO 2 ──── 220Ω Resistor ──── LED Anode
 
 GPIO 4 ──── Buzzer Positive
             Buzzer Negative ──── GND
+```
+
+# 🛠️Component Cost List for Arduino Vital Signs Monitoring System (India)
+## Main Components (Excluding Microcontroller)
+<img width="920" height="396" alt="Screenshot 2025-07-10 184744" src="https://github.com/user-attachments/assets/47b464d0-b35d-4efc-8158-45646aef882c" />
+
+## Supporting Components 
+```bash
+LED ,BUZZER, RESISTOR, BREAD-BOARD ,JUMPER WIRES,CAPACITORS ,SCHOTTKY DIODES, VOLTAGE REGULATOR , Li- BATTERY CHARGING CIRCUIT (TP-4056),etc ~ Rs1000
+```
+
+```bash
+ESP32  Microcontroller ~ Rs530
 ```
