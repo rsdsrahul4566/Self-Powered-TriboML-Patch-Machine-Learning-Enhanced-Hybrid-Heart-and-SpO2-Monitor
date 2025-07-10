@@ -17,7 +17,8 @@ VOLTAGE REGULATOR                              │
 Li-BATTERY                                     │
 Li- BATTERY CHARGING CIRCUIT (TP-4056),etc     │                         
                                                │
-                                           ◄───┤    
+                                        ◄───── ┘
+    
           
                                                              
 ```
