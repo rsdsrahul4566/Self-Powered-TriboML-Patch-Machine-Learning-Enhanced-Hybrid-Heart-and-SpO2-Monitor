@@ -6,7 +6,7 @@
 ## Supporting Components 
 
 ```bash
-LED                                     ◄───── ┐
+LED                                      ◄─────┐
 BUZZER                                         │
 RESISTOR                                       │
 BREAD-BOARD                                    │
@@ -17,7 +17,7 @@ VOLTAGE REGULATOR                              │
 Li-BATTERY                                     │
 Li- BATTERY CHARGING CIRCUIT (TP-4056),etc     │                         
                                                │
-                                        ◄───── ┘
+                                          ◄────┘
     
           
                                                              
