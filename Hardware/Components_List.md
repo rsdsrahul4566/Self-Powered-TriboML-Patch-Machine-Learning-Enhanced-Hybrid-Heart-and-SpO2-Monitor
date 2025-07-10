@@ -4,18 +4,22 @@
 <img width="920" height="396" alt="Screenshot 2025-07-10 184744" src="https://github.com/user-attachments/assets/47b464d0-b35d-4efc-8158-45646aef882c" />
 
 ## Supporting Components 
+
 ```bash
-LED
-BUZZER
- RESISTOR
- BREAD-BOARD
-JUMPER WIRES
-CAPACITORS
-SCHOTTKY DIODES
-VOLTAGE REGULATOR
-Li-BATTERY
-Li- BATTERY CHARGING CIRCUIT (TP-4056),etc
-                                               ~ Rs1000
+LED                                     ◄───── ┐
+BUZZER                                         │
+RESISTOR                                       │
+BREAD-BOARD                                    │
+JUMPER WIRES                                   │                                                                   
+CAPACITORS                                     │     ~ Rs 1000
+SCHOTTKY DIODES                                │                             
+VOLTAGE REGULATOR                              │
+Li-BATTERY                                     │
+Li- BATTERY CHARGING CIRCUIT (TP-4056),etc     │                         
+                                               │
+                                           ◄───┤    
+          
+                                                             
 ```
 
 ```bash
