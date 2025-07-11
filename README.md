@@ -52,10 +52,10 @@ Built for the **ELCIA Sense2Scale Hackathon**, this device integrates a **triboe
 
 | 🔧 Component | 💡 Description | 💰 Cost (INR) |
 |-------------|----------------|--------------|
-| TENG Film | Self-powered triboelectric heartbeat sensor | ₹550 |
-| MAX30102 | PPG + SpO₂ sensor module | ₹999 |
-| MLX90614 | IR temperature sensor | ₹800 |
-| Supercapacitor + Rectifier | Power management unit | ₹400 |
+| TENG Film | Self-powered triboelectric heartbeat sensor | ₹200 |
+| MAX30102 | PPG + SpO₂ sensor module | ₹350 |
+| MLX90614 | IR temperature sensor | ₹1350 |
+| Li-Battery + Rectifier | Power management unit | ₹400 |
 
 > 💸 **Total Estimated Cost**: ₹2,749 — well within ₹4,000 constraint ✅
 
