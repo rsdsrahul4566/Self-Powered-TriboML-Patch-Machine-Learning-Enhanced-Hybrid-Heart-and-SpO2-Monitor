@@ -1,4 +1,5 @@
-# 💡 Self-Powered TriboML Patch (DEMO VIDEO URL MENTIONED BELOW)
+# 💡 Self-Powered TriboML Patch   
+     (DEMO VIDEO URL MENTIONED BELOW)
 > 🚑 *Machine Learning–Enhanced Batteryless Wearable for Real-Time Heart Rate, SpO₂ & Skin Temperature Monitoring*
 
 ---
