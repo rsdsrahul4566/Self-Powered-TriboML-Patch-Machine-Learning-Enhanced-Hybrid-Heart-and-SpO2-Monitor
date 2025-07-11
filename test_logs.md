@@ -16,3 +16,8 @@ Time(s)  Ambient(°C)  Skin(°C)  Quality  Status
  <img width="1919" height="1015" alt="Screenshot 2025-07-11 230538" src="https://github.com/user-attachments/assets/0bc71cfe-8c09-4a96-9f4d-95efd49adfcc" />
 ## SPO2 and heart Rate 
   <img width="942" height="703" alt="Screenshot 2025-07-11 233725" src="https://github.com/user-attachments/assets/d4d175f9-8489-4c11-b6ad-e34d557d38d6" />
+```bash
+Time    IR_Raw    IR_ML    HR_Raw    HR_ML    SpO2    Quality    Status
+```
+
+<img width="1513" height="805" alt="Screenshot 2025-07-11 234527" src="https://github.com/user-attachments/assets/ae05aa01-dae0-4a3b-a5d9-383d4d7c045f" />
