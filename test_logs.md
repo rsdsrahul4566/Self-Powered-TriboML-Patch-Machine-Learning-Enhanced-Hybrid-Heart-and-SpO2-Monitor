@@ -9,3 +9,8 @@ Time(s)  Ambient(°C)  Skin(°C)  Quality  Status
 <img width="644" height="739" alt="Screenshot 2025-07-11 224113" src="https://github.com/user-attachments/assets/327d4bcf-9226-4f23-bc24-deb85fdfd660" />
 
 <img width="628" height="729" alt="Screenshot 2025-07-11 224311" src="https://github.com/user-attachments/assets/aae7a939-7940-4b35-9a12-c89816e2999b" />
+
+
+ <img width="917" height="494" alt="Screenshot 2025-07-11 230754" src="https://github.com/user-attachments/assets/4f3945f1-5a76-4cb4-9eb6-c97a77fe83c2" />
+
+ <img width="1919" height="1015" alt="Screenshot 2025-07-11 230538" src="https://github.com/user-attachments/assets/0bc71cfe-8c09-4a96-9f4d-95efd49adfcc" />
