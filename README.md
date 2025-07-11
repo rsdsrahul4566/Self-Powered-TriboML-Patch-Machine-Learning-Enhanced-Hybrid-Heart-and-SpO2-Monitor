@@ -1,125 +1,177 @@
-# 💓 Self-Powered TriboML Patch
-### 🛠️ ELCIA Sense2Scale Hackathon — Team Ignis Vision
-
-> **A Machine-Learning-Enhanced Hybrid Heart and SpO₂ Monitor for Remote Patient Monitoring**
+# 💡 Self-Powered TriboML Patch
+> 🚑 *Machine Learning–Enhanced Batteryless Wearable for Real-Time Heart Rate, SpO₂ & Skin Temperature Monitoring*
 
 ---
 
-## 🔍 Overview
+## 🚀 Project Summary
 
-The **Self-Powered TriboML Patch** is an ultra-thin, skin-conformable adhesive patch designed to monitor **heart rate**, **SpO₂**, and **skin temperature** continuously — all without batteries.
+🔬 The **Self-Powered TriboML Patch** is a next-gen **batteryless wearable health monitor** combining energy-harvesting sensors with embedded AI. Designed for **remote patient monitoring**, it offers continuous, accurate, and real-time tracking of **heart rate**, **blood oxygen (SpO₂)**, and **skin temperature** — ideal for elderly care, post-COVID recovery, and chronic disease management.
 
-Combining **triboelectric nanogenerator (TENG)** technology with **PPG (MAX30102)** and **IR temperature (MLX90614)** sensors, and powered by **machine learning (CNN + LSTM + Random Forest)**, this wearable device delivers medical-grade accuracy in even motion-heavy, real-life conditions.
-
----
-
-## 🎯 Target Application Area
-
-- Elderly care monitoring
-- Post-COVID recovery
-- Ambulatory & chronic illness home care
-- Continuous, batteryless remote vitals tracking
+Built for the **ELCIA Sense2Scale Hackathon**, this device integrates a **triboelectric nanogenerator (TENG)**, **PPG sensor (MAX30102)**, **IR temperature sensor (MLX90614)**, and a **lightweight ML pipeline** on an ESP32 board.
 
 ---
 
-## ⚙️ Key Features
+## 🎯 Target Application Areas
 
-- ⚡ **Batteryless** TENG-based heart rate monitoring
-- 🔁 **Dual-layer ML pipeline**:  
-   - 1D-CNN for signal quality filtering  
-   - LSTM for peak detection  
-   - Random Forest for SpO₂ correction in motion
-- 📶 **BLE/Wi-Fi connectivity** for real-time data streaming
-- 📊 **Live dashboards** with alerts, trends, and analytics
-- 🔒 **Secure encrypted transmission** to companion app
+- 👵 Elderly and home-based healthcare
+- 🫁 Post-COVID recovery support
+- 🏃 Ambulatory chronic care monitoring
+- 💓 Continuous real-time vitals tracking
+- 🔋 Batteryless and maintenance-free health patch
 
 ---
 
-## 🧠 ML Architecture
+## ⚙️ Core Features
 
-| Layer        | Purpose                          |
-|--------------|----------------------------------|
-| 🧠 1D-CNN     | Denoise and classify signal quality |
-| 🧠 LSTM       | Extract reliable heart rate peaks |
-| 🌲 Random Forest | Enhance SpO₂ accuracy in motion   |
-
----
-
-## 🔬 Sensors & Components
-
-| Sensor/Module    | Type                     | Function                          | Cost (INR) |
-|------------------|--------------------------|-----------------------------------|------------|
-| TENG Film        | Triboelectric Generator  | Self-powered heartbeat sensing    | ₹550       |
-| MAX30102         | PPG + SpO₂ Module        | Backup HR and SpO₂ estimation     | ₹999       |
-| MLX90614         | IR Temperature Sensor    | Skin temperature measurement      | ₹800       |
-| Supercapacitor   | Energy Storage           | Conditioning & storage            | ₹400       |
-
-> 📦 **Total sensor cost:** ₹2,749 (within ₹4,000 constraint)
+| ⚡ Feature | 🔍 Description |
+|-----------|----------------|
+| 🔋 **Batteryless Operation** | TENG-based self-powered sensing for heartbeats |
+| 🧠 **Dual ML Architecture** | CNN + LSTM + Random Forest for robust signal processing |
+| 📡 **Wireless Communication** | BLE / Wi-Fi streaming to mobile dashboards |
+| 📊 **Live Visualization** | Real-time vitals, signal quality indicators, and trend graphs |
+| 🚨 **Smart Alerts** | Configurable triggers for bradycardia, hypoxia, fever, etc. |
+| 🧾 **Clinician-Ready Logs** | Time-stamped data exports and summary reports |
 
 ---
 
-## 🔌 Circuit Pinout (ESP32)
+## 🧠 Machine Learning Pipeline
 
-| Sensor         | ESP32 Pin     | Function                        |
-|----------------|---------------|----------------------------------|
-| TENG Output    | GPIO36        | Analog peak voltage detection   |
-| MAX30102 (SDA) | GPIO21        | I²C Data                        |
-| MAX30102 (SCL) | GPIO22        | I²C Clock                       |
-| MLX90614 (SDA) | GPIO21        | I²C Data                        |
-| MLX90614 (SCL) | GPIO22        | I²C Clock                       |
-| Supercap Sense | GPIO39        | ADC monitoring                  |
+| 🧠 ML Layer | 📋 Function |
+|------------|-------------|
+| 🔹 1D-CNN | Filters noise and assesses signal quality of raw TENG/PPG streams |
+| 🔸 LSTM | Extracts accurate heart-rate peaks from filtered signals |
+| 🌲 Random Forest | Enhances SpO₂ accuracy under movement-induced noise |
+
+> ML runs on-device on the ESP32 for fast, offline inference — no cloud needed! 🚫☁️
 
 ---
 
-## 🧪 Testing Plan (TRL-8 Ready)
+## 🧩 Hardware Components
 
-- ✅ **<1% HR error** vs. ECG on 20 subjects (50–120 BPM)
-- ✅ **±2% SpO₂ accuracy** vs. clinical oximeter (static & motion)
-- ✅ **±0.5°C IR accuracy** vs. NIST thermometer (30–40°C)
-- ✅ **48h wear trials**: ≥98% data uptime, <1% signal loss
-- ✅ **Environmental robustness**: −10 to +40°C, 20–90% RH
-- ✅ **ML Validation**:  
-   - CNN signal classifier ≥97% sensitivity/specificity  
-   - LSTM HR MAE < 0.5 BPM
+### 🧪 Sensors & Modules
+
+| 🔧 Component | 💡 Description | 💰 Cost (INR) |
+|-------------|----------------|--------------|
+| TENG Film | Self-powered triboelectric heartbeat sensor | ₹550 |
+| MAX30102 | PPG + SpO₂ sensor module | ₹999 |
+| MLX90614 | IR temperature sensor | ₹800 |
+| Supercapacitor + Rectifier | Power management unit | ₹400 |
+
+> 💸 **Total Estimated Cost**: ₹2,749 — well within ₹4,000 constraint ✅
+
+---
+
+## 🔌 ESP32 Pin Connections
+
+| 📦 Module | 📍 ESP32 Pin | 🔧 Function |
+|----------|-------------|-------------|
+| TENG Film | GPIO36 (ADC1_0) | Pulse voltage detection |
+| MAX30102 (SDA) | GPIO21 | I²C Data Line |
+| MAX30102 (SCL) | GPIO22 | I²C Clock Line |
+| MLX90614 (SDA) | GPIO21 | Shared I²C Data |
+| MLX90614 (SCL) | GPIO22 | Shared I²C Clock |
+| Supercap Monitor | GPIO39 (ADC1_3) | Voltage sensing |
+
+---
+
+## 🧪 Testing & Validation Plan (TRL-8 Ready)
+
+📐 **Accuracy Targets:**
+
+- ✅ **Heart Rate**: <1% error vs. ECG (50–120 BPM)
+- ✅ **SpO₂**: ±2% vs. clinical oximeter (70–100%) under motion & rest
+- ✅ **Temperature**: ±0.5 °C vs. calibrated NIST thermometer (30–40 °C)
+
+🧪 **Robustness Tests:**
+
+- 🔋 48h continuous wear trial (≥98% uptime)
+- 🌡️ Operates in −10 °C to +40 °C, 20–90% RH
+- 📶 Over-the-air (OTA) firmware updates
+- 📊 ML Accuracy:  
+  - CNN signal classifier ≥97%  
+  - LSTM HR MAE < 0.5 BPM
 
 ---
 
 ## 🇮🇳 Indian Sensor Substitution Plan
 
-| Component   | Substitution Strategy |
-|-------------|------------------------|
-| TENG Film   | Local PTFE composite, retrain ML models |
-| MAX30102    | Indian I²C-compatible PPG chips |
-| MLX90614    | Local IR sensor with I²C support |
+| 🧩 Imported | 🇮🇳 Substitute | 🔄 Strategy |
+|------------|----------------|------------|
+| TENG Film | Local PTFE-based tribo films | Retrain ML model on local data |
+| MAX30102 | Indian PPG sensor with I²C | Retrain CNN + Random Forest |
+| MLX90614 | Local IR temperature module | Plug-and-play via I²C firmware APIs |
 
 ---
 
-## 📈 Expected Output
+## 📲 Expected Outputs
 
-- 📊 Real-time vitals dashboard: HR (50–120 BPM), SpO₂ (70–100%), Temp (30–40°C)
-- 🚨 Alerts for bradycardia, hypoxia, fever, detachment
-- 🧾 Timestamped data logs (CSV): TENG, PPG, Temp
-- 📈 ML analytics: heartbeat peaks, quality flags, variability trends
-- 🩺 Exportable clinician summary reports
+- 📈 **Real-Time Dashboard**  
+  - Heart Rate (50–120 BPM)  
+  - SpO₂ (70–100%)  
+  - Skin Temp (30–40 °C)  
+  - Signal Quality Indicators
+
+- 🚨 **Alerts & Notifications**  
+  - Bradycardia  
+  - Hypoxia  
+  - Fever  
+  - Patch detachment  
+
+- 🧾 **Data Logging & Analytics**  
+  - CSV logs with timestamps  
+  - Annotated ML outputs  
+  - Trend reports for clinicians  
 
 ---
 
-## 👨‍💻 Team Ignis Vision
+## 🧑‍💻 Team Ignis Vision
 
-| Name         | Role       | Email                           |
-|--------------|------------|----------------------------------|
-| Rahul Kumar  | Team Lead  | rahul.kumar791@ptuniv.edu.in     |
-| Suwathi J    | Member     | suwathi.j881@ptuniv.edu.in       |
+| 👤 Name | 🧑‍💼 Role | 📧 Email |
+|--------|-----------|-----------|
+| Rahul Kumar | Team Lead | rahul.kumar791@ptuniv.edu.in |
+| Suwathi J | Team Member | suwathi.j881@ptuniv.edu.in |
 
 📞 Contact: +91 7878260266  
-🏫 Institute: Puducherry Technological University
+🏛️ Institute: Puducherry Technological University
 
 ---
 
-## 📜 Declaration
+## ✅ Declaration
 
-We comply with cost, TRL-8, and data-sharing requirements as per ELCIA Sense2Scale guidelines.
+We understand and agree to comply with the **cost**, **TRL‑8 standards**, and **data-sharing policies** set by the ELCIA Sense2Scale Hackathon.
 
-> *This patch is the first-of-its-kind fusion of energy harvesting, real-time vitals monitoring, and embedded AI — made for the future of wearable healthcare.*
+> 🧠 This patch is India’s first hybrid wearable that combines **self-powered sensing** with **edge AI** for reliable vitals monitoring — optimized for chronic care, and built for scale.
 
 ---
+
+## 📸 Screenshots / Demo 
+
+```bash
+https://drive.google.com/file/d/1Mj_FknmQuOdrHJPVEiVNY1OkJiJjHbp6/view?usp=drive_link
+```
+
+![elcia1](https://github.com/user-attachments/assets/cad33acb-d950-4534-9c69-a4a960ebb460)
+
+![elcia2](https://github.com/user-attachments/assets/87e512ff-2092-416d-93a2-906268e6b194)
+
+![elcia3](https://github.com/user-attachments/assets/17a8adfe-fb8f-408c-8064-692b86ba5483)
+
+![elcia5](https://github.com/user-attachments/assets/d04e0ae7-74a0-48ca-b013-42437ad2ec25)
+
+
+---
+
+## 📜 License
+
+This project is for educational and demonstration purposes under the ELCIA Hackathon. Licensing terms may be updated post evaluation.
+
+---
+
+## ⭐ Support This Project
+
+If you like this project, consider ⭐ staring and selecting for the finale! Your feedback and contributions are welcome.
+
+---
+
+🧠 *"Inspiring intelligent healthcare through self-powered innovation."*  
+— Team Ignis Vision 💡
