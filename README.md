@@ -1,5 +1,3 @@
-# Self-Powered TriboML Patch Machine Learning Enhanced Hybrid Heart and SpO2 Monitor
-
 # 🚀 Self-Powered TriboML Patch
 ## **The World's First Battery-Free AI-Enhanced Vital Signs Monitor**
 
