@@ -125,12 +125,7 @@ Built for the **ELCIA Sense2Scale Hackathon**, this device integrates a **triboe
 
 ---
 
-## 🧑‍💻 Team Ignis Vision
 
-| 👤 Name | 🧑‍💼 Role | 📧 Email |
-|--------|-----------|-----------|
-| Rahul Kumar | Team Lead | rahul.kumar791@ptuniv.edu.in |
-| Suwathi J | Team Member | suwathi.j881@ptuniv.edu.in |
 
 📞 Contact: +91 7878260266  
 🏛️ Institute: Puducherry Technological University
